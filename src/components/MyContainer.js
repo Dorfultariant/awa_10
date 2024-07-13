@@ -5,7 +5,16 @@ import MyList from "./MyList.js";
 
 const MyContainer = () => {
     const header = "Giving me a headache...";
-    const [items, set_items] = useState([]);
+    const defaults = [
+        {
+            id: "1",
+            text: "item 1"
+        }, {
+            id: "2",
+            text: "item 2"
+        }
+    ]
+    const [items, set_items] = useState(defaults);
     const [new_item, set_new_item] = useState("");
 
     const add_item = () => {
