@@ -8,10 +8,12 @@ const MyContainer = () => {
     const defaults = [
         {
             id: "1",
-            text: "item 1"
+            text: "item 1",
+            clicked: false
         }, {
             id: "2",
-            text: "item 2"
+            text: "item 2",
+            clicked: false
         }
     ]
     const [items, set_items] = useState(defaults);
